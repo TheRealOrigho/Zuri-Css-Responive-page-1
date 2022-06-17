@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-body">
+        <section class="container">
+            <section class="copy">
+                <h1>Learn to code by <br>
+                    watching others
+                </h1>
+                <p>See how experienced developers solve problems in real-time. <br>
+                    Watching scripted tutorials is great, but understanding how <br>
+                    deelopers think is invaluable.
+                </p>
+            </section>
+            <section class="form-content">
+                <div class="try">
+                    <button type="submit">
+                        Try it free 7 days &nbsp;<a href="#">then $20/mo. thereafter</a>
+                    </button>
+                </div>
+
+                <div class="form-box">
+                    <form action="">
+                            <input type="text" name="FirstName" placeholder="First Name" id="FirstName">
+                       
+                        
+                            <input type="text" name="LastName" placeholder="Last Name" id="LastName">
+                         
+                       
+                            <input type="email" name="Email" id="Email" placeholder="Email Address">
+                       
+                            <input type="password" name="Password" id="Password" placeholder="Password">
+                    
+                        <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                        <p>by clicking the button you are agreeing to our  <a href="#">Terms and Cnditions</a></p>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script>
+    const email = document.getElementById("Email").value
+        EMIAL_REGEX = "/^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/"
+        const isValid = EMIAL_REGEX.test(email)
+        console.log(isValid)
+</script>
+</html>
